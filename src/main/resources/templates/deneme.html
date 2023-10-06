@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: lightcoral;
+  margin: 0;
+}
+           .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+        }
+
+        /* Bu stil, butonun yatayda ortalanmasını sağlar */
+        .button-container {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="text-align: center; background-color: dimgrey; padding: 5px; margin-left: 15%;margin-right: 15%; ">
+        <h1>Well Come My Project</h1>
+    </div>
+    <div style="background-color: bisque; height: 100%; padding: 100px; margin-left: 15%; margin-right: 15%; height:25cm;">
+        <div class="center">
+            <form action="/file/dosya-yukle" method="post" enctype="multipart/form-data">
+                <input type="file" name="dosya" id="dosya" />
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+        <div class="button-container" th:if="${yuklenenMetin}">
+            <textarea th:text="${yuklenenMetin}" rows="30" cols="80"></textarea>
+        </div>
+    </div>
+
+
+</body>
+</html>
