@@ -2,8 +2,6 @@
 
 ### Tessdata Dosyasının Yolu
 
-Eğer projenizi çalıştırmak için Tesseract OCR kullanıyorsanız, doğru `tessdata` dosyasını indirip projenize dahil etmelisiniz. İşte bu adımları izleyebilirsiniz:
-
 1. [Tesseract OCR'nin resmi dokümantasyonuna gidin](https://tesseract-ocr.github.io/tessdoc/) ve sürümünüze uygun olanı indirin ve kurulumu yapın.
 
 2. Yukarıdaki linkten, projenizin diline uygun `tessdata` dosyasını indirin. Örneğin, İngilizce için `eng.traineddata` dosyasını indirebilirsiniz.
